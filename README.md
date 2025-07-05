@@ -1,14 +1,25 @@
-# URL Shortener
+# 📦 Linkify - URL Shortener
 
 A simple and efficient URL shortener service built with Node.js, Express, and MongoDB.
 
-## Features
+## 🚀 Features
 
 - Shorten long URLs into compact, shareable links
 - Click tracking for analytics
 - User-specific link management
 - RESTful API design
 - MongoDB Atlas integration
+- Input validation and security
+
+## 🛠️ Tech Stack
+
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- Nanoid
+- CORS
+- Dotenv
 
 ## Prerequisites
 
@@ -16,11 +27,11 @@ A simple and efficient URL shortener service built with Node.js, Express, and Mo
 - MongoDB Atlas account
 - npm or yarn package manager
 
-## Installation
+## ⚙️ Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/deepakroyltim/linkify-.git
 cd url-shortener
 ```
 
@@ -51,9 +62,9 @@ npm run dev
 npm start
 ```
 
-The server will start on the port specified in your `.env` file (default: 5171).
+The server will start on port 5171.
 
-## API Endpoints
+## 📡 API Endpoints
 
 ### 1. Health Check
 - **GET** `/`
@@ -106,7 +117,7 @@ url-shortener/
 |----------|-------------|---------|
 | `SERVER_PORT` | Port number for the server | 3000 |
 | `MONGO_URI` | MongoDB connection string | Required |
-| `BASE_URL` | Base URL for shortened links | http://localhost:5000 |
+| `BASE_URL` | Base URL for shortened links | http://localhost:5171 |
 | `NODE_ENV` | Environment (development/production) | development |
 
 ## Security Considerations
@@ -115,6 +126,15 @@ url-shortener/
 - CORS is configured for development and production environments
 - Input validation is implemented for URL format
 - Error handling prevents information leakage
+
+## 🧪 Testing
+
+Use tools like Postman or curl to test the endpoints.
+
+## 📌 Notes
+
+- Make sure your IP is whitelisted in MongoDB Atlas under Network Access
+- You can change the base URL in .env to match your deployment domain
 
 ## Contributing
 
